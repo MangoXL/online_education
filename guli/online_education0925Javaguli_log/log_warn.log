@@ -1,0 +1,6 @@
+2019-02-25 19:32:17.694 [http-nio-8101-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-02-25 19:35:23.241 [http-nio-8101-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('r' (code 114)): Expected space separating root-level values; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('r' (code 114)): Expected space separating root-level values
+ at [Source: (PushbackInputStream); line: 1, column: 12]
+2019-02-25 19:35:42.740 [http-nio-8101-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-02-25 19:41:07.596 [http-nio-8101-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
+2019-02-25 19:43:19.084 [http-nio-8101-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by handler execution: GuliException(code=21003)
