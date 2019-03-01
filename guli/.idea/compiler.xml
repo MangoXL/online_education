@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="aliyunoss" />
+        <module name="guli-commonservice-oss" />
         <module name="guli-framework-common" />
         <module name="guli-microservice-edu" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aliyunoss" target="1.8" />
+      <module name="guli-commonservice-oss" target="1.8" />
       <module name="guli-framework-common" target="1.8" />
       <module name="guli-framework-parent" target="1.8" />
       <module name="guli-microservice-edu" target="1.8" />

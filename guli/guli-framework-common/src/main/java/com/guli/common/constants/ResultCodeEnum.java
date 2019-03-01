@@ -8,7 +8,9 @@ public enum ResultCodeEnum {
     UNKNOWN_REASON(false,20001,"未知错误"),
     BAD_SQL_GRAMMAR(false,21001,"sql语句错误"),
     JSON_PARSE_ERROR(false,21002,"json解析异常"),
-    PARAM_ERROR(false,21003,"参数错误");
+    PARAM_ERROR(false,21003,"参数错误"),
+    FILE_UPLOAD_ERROR(false,21004,"文件上传失败"),
+    EXCEL_IMPORT_ERROR(false,21005,"Excel文件导入失败");
 
     private Boolean success;
     private Integer code;

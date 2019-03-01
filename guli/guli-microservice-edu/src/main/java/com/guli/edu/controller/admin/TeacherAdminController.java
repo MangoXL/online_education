@@ -35,8 +35,12 @@ public class TeacherAdminController {
     public R deleteById(
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id){
-        teacherService.removeById(id);
-        return R.ok();
+        boolean result = teacherService.removeById(id);
+        if(result){
+            return R.ok();
+        }else{
+            return R.error().message("该记录不存在！");
+        }
     }
 
     @ApiOperation(value = "分页查询讲师")
@@ -82,8 +86,12 @@ public class TeacherAdminController {
     public R addTeacher(
             @ApiParam(name = "teacher",value = "讲师对象",required = true)
             @RequestBody Teacher teacher){
-        teacherService.save(teacher);
-        return R.ok();
+        boolean result = teacherService.save(teacher);
+        if(result){
+            return R.ok();
+        }else{
+            return R.error().message("添加失败！");
+        }
     }
 
     @ApiOperation(value = "根据id查询讲师")

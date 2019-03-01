@@ -21,4 +21,6 @@ public interface TeacherService extends IService<Teacher> {
      * @param teacherQuery
      */
     void queryTeacher(Page<Teacher> teacherPage, TeacherQuery teacherQuery);
+
+
 }

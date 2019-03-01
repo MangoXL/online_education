@@ -10,6 +10,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * <p>
  * 讲师 服务实现类
@@ -52,5 +54,11 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         }
         //数据查询
         baseMapper.selectPage(teacherPage,wrapper);
+    }
+
+    @Override
+    public boolean removeById(Serializable id) {
+        Integer result = baseMapper.deleteById(id);
+        return null != result && result > 0;
     }
 }
